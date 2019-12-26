@@ -24,7 +24,7 @@ class Footer extends Component {
               <li>&copy; Copyright 2019 Yunus Emre</li>
               <li>
                 Design by{' '}
-                <a title="Styleshout" href="mailto:ysert2005@gmail.com">
+                <a title="yes" href="mailto:ysert2005@gmail.com">
                   YES
                 </a>
               </li>
