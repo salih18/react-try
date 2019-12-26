@@ -43,8 +43,8 @@ const IMAGES = [
     thumbnailWidth: 320,
     thumbnailHeight: 212,
     tags: [
-      { value: 'Deniz', title: 'Deniz' },
-      { value: 'Insan', title: 'Insan' },
+      { value: 'Ocean', title: 'Ocean' },
+      { value: 'People', title: 'People' },
     ],
     caption: 'Yunus Emre (Sergi #2)',
   },

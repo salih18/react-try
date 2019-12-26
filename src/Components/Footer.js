@@ -25,7 +25,7 @@ class Footer extends Component {
               <li>
                 Design by{' '}
                 <a title="Styleshout" href="mailto:ysert2005@gmail.com">
-                  Tikla
+                  YES
                 </a>
               </li>
             </ul>
