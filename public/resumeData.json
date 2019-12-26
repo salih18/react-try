@@ -1,0 +1,153 @@
+{
+  "main": {
+    "name": "Yunus Emre Sert",
+    "occupation": "Kastamonu Fen Lisesi",
+    "description": " ogrencisi",
+    "image": "profilepic.jpg",
+    "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repudiandae.",
+    "contactmessage": "Bana buradan ulasabilirsiniz",
+    "email": "ysert20051@gmail.com",
+    "phone": "555-555-5555",
+    "address": {
+      "street": "Merkez",
+      "city": "Kastamonu",
+      "state": "Turkey",
+      "zip": "37000"
+    },
+    "website": "http://www.asdad.com",
+    "resumedownload": "http://asdad.com",
+    "social": [
+      {
+        "name": "facebook",
+        "url": "http://facebook.com/yunusemre.sert.3914",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "twitter",
+        "url": "http://twitter.com",
+        "className": "fa fa-twitter"
+      },
+      {
+        "name": "google-plus",
+        "url": "http://googleplus.com/",
+        "className": "fa fa-google-plus"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "http://instagram.com/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "skype",
+        "url": "http://skype.com",
+        "className": "fa fa-skype"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "buradaki ders bilgilerim tornektir. tam olarak gercegi yansitmamaktadir",
+    "education": [
+      {
+        "school": "School3",
+        "degree": "Lorem ipsum dolor sit",
+        "graduated": "Ocak 2007",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repudiandae."
+      },
+      {
+        "school": "School2",
+        "degree": "Lorem ipsum dolor sit",
+        "graduated": "Ocak 2007",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repudiandae."
+      },
+      {
+        "school": "School #1 ",
+        "degree": "Lorem ipsum dolor sit",
+        "graduated": "Ocak 2003",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repudiandae."
+      }
+    ],
+    "work": [
+      {
+        "company": "Yazilim Gelistiricisi ",
+        "title": "Web Developer",
+        "years": "Eylul 2017 - Now",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repudiandae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repudiandae."
+      }
+    ],
+    "skills": [
+      {
+        "name": "Matematik",
+        "level": "90%"
+      },
+      {
+        "name": "Fizik",
+        "level": "85%"
+      },
+      {
+        "name": "Kimya",
+        "level": "60%"
+      },
+      {
+        "name": "Biyoloji",
+        "level": "70%"
+      },
+      {
+        "name": "Ingilizce",
+        "level": "70%"
+      },
+      {
+        "name": "Basketbol",
+        "level": "50%"
+      },
+      {
+        "name": "Bilgisayar",
+        "level": "90%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Kastamonu Fen Lisesi",
+        "category": "fen lisesinde yaptigim projeler",
+        "image": "kfl.jpg",
+        "url": "http://kastamonufenlisesi.meb.k12.tr/"
+      },
+      {
+        "title": "Kastamonu Fen Lisesi",
+        "category": "fen lisesinde yaptigim projeler",
+        "image": "kfl.jpg",
+        "url": "http://kastamonufenlisesi.meb.k12.tr/"
+      },
+      {
+        "title": "Kastamonu Fen Lisesi",
+        "category": "fen lisesinde yaptigim projeler",
+        "image": "kfl.jpg",
+        "url": "http://kastamonufenlisesi.meb.k12.tr/"
+      },
+      {
+        "title": "Kastamonu Fen Lisesi",
+        "category": "fen lisesinde yaptigim projeler",
+        "image": "kfl.jpg",
+        "url": "http://kastamonufenlisesi.meb.k12.tr/"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Kendisi iyi bir abi olur",
+        "user": "Abdul Kadir"
+      },
+      {
+        "text": "Yunus Emre, caliskan ve durust olmasinin yaninda azimli bir cocuktur",
+        "user": "Babasi"
+      }
+    ]
+  }
+}
