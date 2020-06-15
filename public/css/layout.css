@@ -169,6 +169,10 @@ ul#nav li {
   display: inline-block;
 }
 
+#nav .active {
+  color: #f06000;
+}
+
 /* Links */
 ul#nav li a {
   /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
@@ -190,9 +194,9 @@ ul#nav li a {
 ul#nav li a:active {
   background-color: transparent !important;
 }
-ul#nav li.current a {
+/* ul#nav li.current a {
   color: #f06000;
-}
+} */
 
 /* ------------------------------------------------------------------ */
 /* c. About Section

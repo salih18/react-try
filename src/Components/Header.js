@@ -1,13 +1,15 @@
-import React, { Component, Fragment } from 'react';
-import ParticlesBg from 'particles-bg';
+import React, { Component, Fragment } from "react";
+import ParticlesBg from "particles-bg";
+import { Link, animateScroll as scroll } from "react-scroll";
 class Header extends Component {
   render() {
     if (this.props.data) {
       var name = this.props.data.name;
       var occupation = this.props.data.occupation;
       var description = this.props.data.description;
+      var animationType = this.props.data.animation.type;
       var city = this.props.data.address.city;
-      var networks = this.props.data.social.map(function(network) {
+      var networks = this.props.data.socials.map(function (network) {
         return (
           <li key={network.name}>
             <a href={network.url}>
@@ -31,34 +33,82 @@ class Header extends Component {
 
             <ul id="nav" className="nav">
               <li className="current">
-                <a className="smoothscroll" href="#home">
+                <Link
+                  className="smoothscroll"
+                  activeClass="active"
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
                   Anasayfa
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="smoothscroll" href="#about">
+                <Link
+                  className="smoothscroll"
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
                   Hakkimda
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="smoothscroll" href="#resume">
+                <Link
+                  className="smoothscroll"
+                  activeClass="active"
+                  to="resume"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
                   Ozgecmis
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="smoothscroll" href="#portfolio">
+                <Link
+                  className="smoothscroll"
+                  activeClass="active"
+                  to="portfolio"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
                   Calismalarim
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="smoothscroll" href="#testimonials">
+                <Link
+                  className="smoothscroll"
+                  activeClass="active"
+                  to="testimonials"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
                   Gorusler
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="smoothscroll" href="#contact">
+                <Link
+                  className="smoothscroll"
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
                   Iletisim
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
@@ -69,7 +119,7 @@ class Header extends Component {
               <h2 className="responsive-headline">{name}</h2>
 
               <h3>
-                <span>{occupation}</span>. {description}.
+                <span>{occupation}</span> {description}
               </h3>
               <hr />
               <ul className="social">{networks}</ul>
@@ -77,12 +127,19 @@ class Header extends Component {
           </div>
 
           <p className="scrolldown">
-            <a className="smoothscroll" href="#about">
+            <Link
+              className="smoothscroll"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
               <i className="icon-down-circle"></i>
-            </a>
+            </Link>
           </p>
         </header>
-        <ParticlesBg type="circle" bg={true} />
+        <ParticlesBg type={animationType} bg={true} />
       </Fragment>
     );
   }

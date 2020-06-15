@@ -1,10 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import baseUrl from './../utils/baseUrl'
 
 class About extends Component {
   render() {
     if (this.props.data) {
       var name = this.props.data.name;
-      var profilepic = 'images/' + this.props.data.image;
+      var image = this.props.data.image.url;
+      // var profilepic = 'images/' + this.props.data.image;
+      var profilepic =
+        baseUrl + image;
+
+      console.log("profilepic", profilepic);
       var bio = this.props.data.bio;
       var street = this.props.data.address.street;
       var city = this.props.data.address.city;
@@ -19,7 +25,11 @@ class About extends Component {
       <section id="about">
         <div className="row">
           <div className="three columns">
-            <img className="profile-pic" src={profilepic} alt="Yunus Emre Pic" />
+            <img
+              className="profile-pic"
+              src={profilepic}
+              alt="Yunus Emre Pic"
+            />
           </div>
           <div className="nine columns main-col">
             <h2>Hakkinda</h2>

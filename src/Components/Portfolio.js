@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
-import Gallery from './../Components/Gallery';
+import React, { Component } from "react";
+import Gallery from "./../Components/Gallery";
+import baseUrl from "./../utils/baseUrl";
 
 class Portfolio extends Component {
   render() {
     if (this.props.data) {
-      var projects = this.props.data.projects.map(function(projects) {
-        var projectImage = 'images/portfolio/' + projects.image;
+      var projects = this.props.data.projects.map(function (projects) {
+        var projectImage = baseUrl + projects.image.url;
         return (
-          <div key={projects.title} className="columns portfolio-item">
+          <div key={projects.id} className="columns portfolio-item">
             <div className="item-wrap">
               <a href={projects.url} title={projects.title}>
                 <img alt={projects.title} src={projectImage} />
@@ -33,11 +34,14 @@ class Portfolio extends Component {
           <div className="twelve columns collapsed">
             <h1>Katildigim Calismalar</h1>
 
-            <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
+            <div
+              id="portfolio-wrapper"
+              className="bgrid-quarters s-bgrid-thirds cf"
+            >
               {projects}
             </div>
             <h1>Resim Galerim</h1>
-            <Gallery />
+            <Gallery gallery={this.props.gallery} />
           </div>
         </div>
       </section>
